@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NYSUE</title>
+        <link rel="icon" href="photos/nysueheaderlogo.png" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <!-- Top Bar Start -->
+        <a href="index.html"><img src="photos/nysuelogo.png" alt="logo" id="nysuelogo" /></a>
+        <header>
+            <nav class="toprow">
+                <ul>
+                    <li><a href="contacts.html" class="styledlink">Contacts</a></li>
+                    <li><a href="about.html" class="styledlink">About</a></li>
+                    <li><a href="events.html" class="styledlink">Events</a></li>
+                    <li><a href="take-action.html" class="styledlink">Take Action!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Top Bar End -->
+
+        <br />
+
+        <h1>New York State United Educators</h1>
+        <h3>Building Red-For-Ed Power In New York State</h3>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="slideshow/kids-149-sign.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="slideshow/rocmarch.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="slideshow/rocsign.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="slideshow/indoor-safe-music.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="slideshow/roczoom.png" style="width:100%" class="sliderphoto" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="slideshow/BLM.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="slideshow/street.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="slideshow/red4rcsd.png" style="width:100%" class="sliderphoto" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="slideshow/rally.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="slideshow/149.jpg" style="width:100%" class="sliderphoto" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br />
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+        
+    </body>
+</html>

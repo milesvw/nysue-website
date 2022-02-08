@@ -1,121 +1,139 @@
 body {
-    font-family: Avenir, 'Heiti SC', Arial, 'Heiti TC', Montserrat, 'Courier New';
-    background: white;
+  font-family: Avenir, 'Heiti SC', Arial, 'Heiti TC', Montserrat, 'Courier New';
 }
-
 h1, h2, h3, h4, p {
-    text-align: center;
-    color: red;
+  text-align: center;
+  color: red;
 }
-
-#nysuelogo {
-  width: 7%;
+h1, p {
+  margin-top: 0;
+}
+.logo {
+  width: 100px;
   height: auto;
-  position: relative;
-  float: left;
-  margin-left: 20px;
-  margin-bottom: 4px;
 }
-
+nav a {
+  color: black;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
 header {
-  background: rgb(236, 231, 231);
-  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
 }
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
+nav ul, li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav ul, li, a {
+  transition: all 0.2s ease 0s;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: black;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+}
+.button {
+  color: white;
+  background-color: rgba(255, 0, 0, 1);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.button:hover {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.8);
+}
+.form-div {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 850px) {
+  nav {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
 }
 
 .styledlink {
   color: rgb(22, 22, 212);
-  font-weight: normal;
   font-size: 1.8vw;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 0.2s ease-in-out;
 }
-
+.zoomlink {
+  color: rgb(22, 22, 212);
+  font-size: 1.2em;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
 .styledlink:hover {
-  color: red;
+color: red;
 }
-
 .styledlink:active {
-  color: red;
+color: red;
 }
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 11%;
-  padding-top: 1.8%;
-  text-transform: uppercase;
-  position: relative;
-}
-
 .abouttext {
-  font-size: 26px;
-  padding: 50px 300px;
+font-size: 26px;
+padding: 50px 300px;
 }
-
 .photo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
 }
-
 .photo2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
 }
-
 .photo3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 70%;
 }
-
 .nodec {
-  color: black;
+color: black;
 }
-
 .center {
-  text-align: center;
+text-align: center;
 }
-
 .eventtext {
-  font-size: 1.6vw;
-  padding: 0px 300px;
+font-size: 1.6vw;
+padding: 0px 300px;
 }
-
 .eventtext2 {
-  font-size: 1.6vw;
-  padding: 0px 300px;
-  color: black;
+font-size: 1.6vw;
+padding: 0px 300px;
+color: black;
 }
-
 hr {
-  width: 70rem;
+width: 70rem;
 }
-
-ul li {
-  color: red;
-  text-align: center;
-  list-style-position: inside;
-  font-size: 20px;
-}
-
 .biggerregister {
-  font-size: 20px;;
+font-size: 20px;;
 }
 
 
@@ -128,76 +146,72 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+position: relative;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 70%;
 }
-
 .sliderphoto {
-  height: 600px;
-  width:auto;
-  object-fit: cover;
+height: 600px;
+width:auto;
+object-fit: cover;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.4s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.4s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+right: 0;
+border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: red;
+background-color: red;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.4s ease;
+cursor: pointer;
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.4s ease;
 }
-
 .active, .dot:hover {
-  background-color: red;
+background-color: red;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
-
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
